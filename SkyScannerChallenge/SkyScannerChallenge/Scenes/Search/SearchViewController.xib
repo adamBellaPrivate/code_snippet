@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="SkyScannerChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSearch" destination="2NG-Qf-2J5" id="nxV-Os-Z1y"/>
+                <outlet property="inputArrivalCity" destination="6b5-0k-aau" id="1Wz-tN-FZp"/>
+                <outlet property="inputDepartingCity" destination="0gu-OC-anb" id="4Vp-kk-B7z"/>
+                <outlet property="lblArrivalCityDesc" destination="DHK-E6-B8I" id="iG2-NL-neB"/>
+                <outlet property="lblDepartingCityDesc" destination="vsq-gT-hzL" id="qpw-vr-cKw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsq-gT-hzL">
+                    <rect key="frame" x="20" y="40" width="335" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0gu-OC-anb">
+                    <rect key="frame" x="15" y="60" width="345" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHK-E6-B8I">
+                    <rect key="frame" x="20" y="110" width="335" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6b5-0k-aau">
+                    <rect key="frame" x="15" y="130" width="345" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2NG-Qf-2J5" customClass="ActionButton" customModule="SkyScannerChallenge" customModuleProvider="target">
+                    <rect key="frame" x="30" y="185" width="315" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="bE0-qf-VXh"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="actionStartSearch:" destination="-1" eventType="touchUpInside" id="Wid-7B-KZa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DHK-E6-B8I" firstAttribute="top" secondItem="0gu-OC-anb" secondAttribute="bottom" constant="20" id="79R-1D-feE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vsq-gT-hzL" secondAttribute="trailing" constant="20" id="8Js-cV-XiG"/>
+                <constraint firstItem="6b5-0k-aau" firstAttribute="top" secondItem="DHK-E6-B8I" secondAttribute="bottom" constant="2" id="9o5-4r-Vjd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2NG-Qf-2J5" secondAttribute="trailing" constant="30" id="CiL-cf-7PW"/>
+                <constraint firstItem="6b5-0k-aau" firstAttribute="trailing" secondItem="0gu-OC-anb" secondAttribute="trailing" id="EfK-5g-B9O"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0gu-OC-anb" secondAttribute="trailing" constant="15" id="Efk-Cf-4Xj"/>
+                <constraint firstItem="DHK-E6-B8I" firstAttribute="leading" secondItem="vsq-gT-hzL" secondAttribute="leading" id="Hvo-mT-W6Z"/>
+                <constraint firstItem="vsq-gT-hzL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="Mbj-z7-Gpy"/>
+                <constraint firstItem="2NG-Qf-2J5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="OOe-bV-vbw"/>
+                <constraint firstItem="DHK-E6-B8I" firstAttribute="trailing" secondItem="vsq-gT-hzL" secondAttribute="trailing" id="RCs-Mu-iSg"/>
+                <constraint firstItem="0gu-OC-anb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="TQ1-fq-yeq"/>
+                <constraint firstItem="0gu-OC-anb" firstAttribute="top" secondItem="vsq-gT-hzL" secondAttribute="bottom" constant="2" id="U2I-dd-u6u"/>
+                <constraint firstItem="6b5-0k-aau" firstAttribute="leading" secondItem="0gu-OC-anb" secondAttribute="leading" id="fmv-pg-cc2"/>
+                <constraint firstItem="2NG-Qf-2J5" firstAttribute="top" secondItem="6b5-0k-aau" secondAttribute="bottom" constant="25" id="r7A-Iw-1dw"/>
+                <constraint firstItem="vsq-gT-hzL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="tox-xy-SF4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  SkyScannerChallenge
+
+  Created by iOS developer on 12/11/18.
+  Copyright © 2018 Sky Scanner Candidate Ltd. All rights reserved.
+*/
+
+// MARK: - Explore scene
+screen.explore.title = "Explore";
+
+// MARK: - Profile scene
+screen.profile.title = "Profile";
+screen.profile.button.log_in.title = "Log in";
+screen.profile.welcome.message = "Welcome Visitor!";
+
+// MARK: - Flights result scene
+screen.flights_result.title = "Search Flights";
+screen.flights_result.header.showed_item.message = "%d of %d results shown";
+
+// MARK: - Itinerary utils
+itinerary.no_stop.title = "Direct";
+itinerary.stop.title = "1 Stop";
+itinerary.more_stops.title = "%d Stops";
+
+// MARK: - Search scene
+screen.search.title = "Search";
+screen.search.button.search.title = "search";
+screen.search.departing_city.title = "Departing:";
+screen.search.arrival_city.title = "Arrival:";
+
+// MARK: - Global texts
+global.ok = "Ok";
+global.loading = "Loading...";
+
+// MARK: - Error handling
+general_error = "General error";
+business_error = "Business error: %d";
